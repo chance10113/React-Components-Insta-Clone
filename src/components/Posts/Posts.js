@@ -22,3 +22,4 @@ console.log(Post)
 };
 
 export default Posts;
+console.log(Posts)
