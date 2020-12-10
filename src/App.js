@@ -36,13 +36,13 @@ const App = () => {
 
       setPosts(
         posts.map((post) => {
-          console.log('postId === post.id: ', postId === post.id);
+          // console.log('postId === post.id: ', postId === post.id);
         return postId === post.id
         ? {...post, likes: post.likes +1 } 
         : post;
      })
       );
-      console.log("THE IMPORTANT ONE", posts)
+      // console.log("THE IMPORTANT ONE", posts)
     };
   return (
     <div className='App'>

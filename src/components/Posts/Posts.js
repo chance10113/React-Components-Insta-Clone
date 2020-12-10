@@ -6,9 +6,9 @@ import './Posts.css';
 const Posts = (props) => {
   // 🔥 Make sure the parent of Posts is passing the right props!
   const { likePost, posts } = props;
-console.log('dumD',dummyData)
-console.log('posts', posts)
-console.log(Post)
+// console.log('dumD',dummyData)
+// console.log('posts', posts)
+// console.log(Post)
   return (
     <div className='posts-container-wrapper'>
       {/* Map through the posts array returning a Post component at each iteration */}
@@ -23,4 +23,4 @@ console.log(Post)
 };
 
 export default Posts;
-console.log(Posts)
+// console.log(Posts)

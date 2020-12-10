@@ -10,7 +10,7 @@ const Post = props => {
   function likePostParam () {
     likePost(post.id)
   }
-console.log('Post.js', post.likes)
+//console.log('Post.js', post.likes)
   return (
     <div className='post-border'>
       <PostHeader
