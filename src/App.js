@@ -10,10 +10,10 @@ import React, { useState } from 'react';
 // Import the dummyData
 import './App.css';
 import dummyData from './dummy-data.js';
-import Post from './components/Posts/Post.js';
+//import Post from './components/Posts/Post.js';
 import Posts from './components/Posts/Posts.js';
-import PostHeader from './components/Posts/PostHeader.js';
-import LikeSection from './components/Posts/LikeSection.js';
+//import PostHeader from './components/Posts/PostHeader.js';
+//import LikeSection from './components/Posts/LikeSection.js';
 import SearchBar from './components/SearchBar/SearchBar.js';
 
 const App = () => {
@@ -36,19 +36,20 @@ const App = () => {
 
       setPosts(
         posts.map((post) => {
+          console.log('postId === post.id: ', postId === post.id);
         return postId === post.id
         ? {...post, likes: post.likes +1 } 
         : post;
      })
       );
+      console.log("THE IMPORTANT ONE", posts)
     };
-
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
       {/* Check the implementation of each component, to see what props they require, if any! */}
       <SearchBar posts={posts} />
-      <Posts posts={posts} likePost={likePost} />
+      <Posts posts = {posts} likePost = {likePost} />
     </div>
   );
 };
