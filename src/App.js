@@ -36,7 +36,9 @@ const App = () => {
     setPosts(
       posts.map((post) => {
         // console.log('postId === post.id: ', postId === post.id);
-        return postId === post.id ? { ...post, likes: post.likes + 1 } : post;
+        return postId === post.id 
+        ? { ...post, likes: post.likes + 1 } 
+        : post;
       })
     );
   };
